@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="brd">
+    <div class="mar"></div>
+    <label class="left" for="">Salaire: </label>
+    <input type="text"></input><br>
+    <div class="ma"></div>
+    <label class="left" for="hm">Homme: </label>
+    <input name="hm" type="radio">
+    <label class="fm" for="fm">Famme: </label>
+    <input name="hm" type="radio"><br>
+    <div class="ma"></div>
+    <label class="left" for="">Number d'enfant: </label>
+    <input class="nub" type="number"></input><br>
+    <div class="ma"></div>
+    <label class="left" for="">Bonus: </label>
+    <select name="country">
+        <option selected="" value="Default">Bonus</option>
+        <option value="">1000dh</option>
+        <option value="">1500dh</option>
+        </select><br>
+        <button class="btn">calcul</button>
+</div>
+
+
+
+
+
+    <style>
+        body{
+            background-image: url(img.jpg);
+        }
+        .mar{
+            margin-top: 6%;
+        }
+        .ma{
+            margin-top: 10px;
+        }
+        .left{
+            margin-left: 33%;
+        }
+        button{
+                margin-left: 28%;
+                width: 47%;
+                margin-top: 69px;
+                height: 39px;
+                background-color: #000;
+                color: white;
+                border-radius: 48px;
+                border: none;
+                font-size: 25px;
+        }
+        .brd{
+                border: 1px black solid;
+                margin-top: 20px;
+                width: 47%;
+                height: 40%;
+                position: absolute;
+                margin-left: 26%;
+                background-color: lightblue;
+        }
+        .nub{
+            width: 7%;
+        }
+        
+    </style>
+</body>
+</html>

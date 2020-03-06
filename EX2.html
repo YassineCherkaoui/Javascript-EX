@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice2</title>
+</head>
+<body>
+    <h1>Exercice2</h1>
+    <button type="button" id="btnF">afficher</button><br>
+    <label id="fil">Classe Filière</label><br>
+    <label id="eco">Filiere:</label>
+    <script>
+        class filiere{
+        constructor(nom,nbe){
+        this.nom=nom;
+        this.nbe=nbe;
+        }
+        affichageD(){
+        return this.nom+"-"+this.nbe;
+        }
+        }
+        var fil=new filiere("Bt",10);
+        var btnF=document.getElementById('btnF');
+        btnF.onclick=function(){
+        document.getElementById('fil').innerHTML="Classe Filière :"+fil.affichageD();
+        document.getElementById('eco').innerHTML="Filiere: "+fil.affichageD()+" ecole : "+eco.affichageE();
+        }
+        class ecole {
+        constructor(nomE,nbel,nbs){
+        this.nomE=nomE;
+        this.nbel=nbel;
+        this.nbs=nbs;
+        }
+        affichageE(){
+        return this.nomE+" "+this.nbel+" "+this.nbs;
+        }
+        }
+        var eco=new ecole("Yassine",100,590);
+        
+    </script>
+    <style>
+        button{
+            width: 153px;
+            height: 56px;
+            border-radius: 48px;
+            border: none;
+            background: #000;
+            color: white;
+            font-size: 23px;
+            font-family: cursive;
+        }
+        h1{
+                text-align: center;
+                font-size: 41px;
+                font-family: cursive;
+        }
+        #fil{
+            font-size: 37px;
+            margin-left: 41%;
+            font-family: fantasy;
+        }
+        #eco{
+             font-size: 37px;
+             margin-left: 41%;
+             font-family: fantasy;
+        }
+    </style>
+</body>
+</html>
